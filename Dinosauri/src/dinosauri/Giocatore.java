@@ -9,5 +9,27 @@ package dinosauri;
  * @author paolucci.sara
  */
 public class Giocatore {
+    private String nome;
+    private Mazzo carteInMano;
+    private Mazzo mazzoPunti;
+    private int puntiTot;
+    
+    public Giocatore(String n){
+        this.nome = n;
+    }
+    
+    public int CalcolaPunti(){
+        puntiTot = mazzoPunti.calcolaPunti();
+        return puntiTot;
+    }
+    
+    public Carta lanciaCarta(){
+        Carta c = carteInMano.primaCarta();
+        return c;
+    }
+    
+    public Mazzo getCarteInMano(){
+        return this.carteInMano;
+    }
     
 }

@@ -9,5 +9,20 @@ package dinosauri;
  * @author paolucci.sara
  */
 public class Carta {
+    private String colore;
+    private int punti;
+    
+    public Carta(String c, int p){
+        this.colore = c;
+        this.punti = p;
+    }
+    
+    public int getPunti(){
+        return this.punti;
+    }
+    
+    public String getColore(){
+        return this.colore;
+    }
     
 }
