@@ -4,6 +4,8 @@
  */
 package dinosauri;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author paolucci.sara
@@ -16,6 +18,9 @@ public class Giocatore {
     
     public Giocatore(String n){
         this.nome = n;
+        this.carteInMano = new Mazzo();
+        this.mazzoPunti = new Mazzo();
+        
     }
     
     public int CalcolaPunti(){
@@ -30,6 +35,10 @@ public class Giocatore {
     
     public Mazzo getCarteInMano(){
         return this.carteInMano;
+    }
+    
+    public Mazzo getMazzoPunti(){
+        return this.mazzoPunti;
     }
     
 }
